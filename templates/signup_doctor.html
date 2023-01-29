@@ -1,0 +1,43 @@
+{% extends "base_signup.html" %}
+
+{% block form %}
+    <p class = 'username1'><strong>Doctor Registration</strong></p>
+    <br />
+    <form class="login" method="POST">
+        <div class="form-group">
+            <input type="text" placeholder="First Name" name="first_name" id="first_name" class="form-control">
+        </div>
+        
+        <div class="form-group">
+            <input type="text" placeholder="Last Name" name="last_name" id="last_name" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <input type="text" placeholder="10 Digit Phone Number" name="mobile" id="mobile" class="form-control ">
+        </div>
+        
+        <div class="form-group">
+            <input type="text" placeholder="Email" name="email" id="email" class="form-control">
+        </div>
+        
+        <div class="form-group">
+            <input type="password" placeholder="Password" name="password" id="password" class="form-control">
+        </div>
+        
+        <div class="form-group">
+            <input type="password" placeholder="Confirm Password" name="confirm_password" id="confirm_password" class="form-control">
+        </div>
+        
+        <div class="form-group">
+            <p align="center" class="error-message">{{ message }}</p>
+        </div>
+
+        <div class="form-group">
+            <button class="full-btn">Register</button>
+        </div>
+
+        <div class="form-group">
+            <p>Have an account? <a href="/doctor/sign-in">Login</a></p>
+        </div>
+    </form>
+{% endblock %}

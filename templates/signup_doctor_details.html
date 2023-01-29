@@ -1,0 +1,49 @@
+{% extends "base_signup.html" %}
+
+{% block form %}
+    {% if user.user_type == "doctor" %}
+    <p class = 'username1'><strong>Professional Details</strong></p>
+    <br />
+    <form class="login" method="POST">
+        <div class="form-group">
+            <select type="text" name="Specialization" id="specs" style="height: 55px; width:400px" class="form-control" required>
+                <option value="" disabled selected>Specialization</option>
+                <option value="Orthopedic">Orthopedic</option>
+                <option value="Dermatologist">Dermatologist</option>
+                <option value="Gynecologist">Gynecologist</option>
+                <option value="Pediatrician">Pediatrician</option>
+                <option value="Radiologist">Radiologist</option>
+                <option value="Dentist">Dentist</option>
+                <option value="Pathologist">Pathologist</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <input type="text" placeholder="About" name="bio" id="bio" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+            <input type="text" placeholder="Visiting Charge" name="fee" id="fee" class="form-control" required>
+        </div>
+        
+        <div class="form-group">
+            <input type="text" placeholder="Qualification" name="qualification" id="qualification" class="form-control" required>
+        </div>
+        
+        <div class="form-group">
+            <input type="text" placeholder="Clinic Address" name="address" id="address" class="form-control" required>
+        </div>
+        
+        <div class="form-group">
+            <p align="center" class="error-message">{{ message }}</p>
+        </div>
+        
+        <div class="form-group">
+            <button class="full-btn">Save</button>
+        </div>
+    </form>
+    {% else %}
+    <p class="username1"><strong>Only registered doctors are allowed to access this page</strong></p>
+    {% endif %}
+
+{% endblock %}

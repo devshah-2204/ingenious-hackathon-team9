@@ -1,0 +1,13 @@
+{% extends "base_login.html" %} 
+
+{% block title %}
+    Doctor Login
+{% endblock %} 
+
+{% block unregistered %}
+    <p>Not Registered? <a href="/doctor/sign-up/">Sign Up</a></p>
+{% endblock %}
+
+{% block switch %}
+    <p>Not a Doctor? <a href="/sign-in/">Sign In as Normal User</a></p>
+{% endblock %}

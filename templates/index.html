@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block head %}
+{% endblock%}
+
+{% block content %}
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <div class="hero-image">
+      <h1 class="titlefont" style="font-size: 100px";>DocAppoint</h1>
+      <h2 style="font-size: 30px">Find the right doctor for you</h2>
+      <form action="#" method="POST">
+        
+        <select name="Specialization" id="specs" style="border-width: 0.5px; height: 50px; width:300px; font-size: 20px; border-radius: 10px; color: #8F8F8F; font-family: Arial, Helvetica, sans-serif;" required>
+          <option value="" style="text-align:center" disabled selected>Specialization</option>
+          <option value="Orthopedic" style="text-align:center;">Orthopedic</option>
+          <option value="Dermatologist" style="text-align:center;">Dermatologist</option>
+          <option value="Gynecologist" style="text-align:center;">Gynecologist</option>
+          <option value="Pediatrician" style="text-align:center;">Pediatrician</option>
+          <option value="Radiologist" style="text-align:center;">Radiologist</option>
+          <option value="Dentist" style="text-align:center;">Dentist</option>
+          <option value="Pathologist" style="text-align:center;">Pathologist</option>
+        </select>
+
+        <input name="date" id="date" type="date" style="height: 50px; width:300px; border-width: 0.1px; font-size: 20px;border-radius: 10px;border-color: rgb(47, 204, 188 ); text-align:center; color:#8F8F8F; font-family: Arial, Helvetica, sans-serif;" required>
+        
+        <br><br>
+        <input class="submit-button" type="submit" value="Search">
+      </form>
+    </div>
+
+{% endblock %}

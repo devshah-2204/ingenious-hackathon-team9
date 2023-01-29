@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">  
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DocAppoint | Sign In</title>
+        <link rel="stylesheet" href="/static/style.css">
+        <script src="https://kit.fontawesome.com/2b070e02a1.js" crossorigin="anonymous"></script>
+        {% block head %}
+        {% endblock %}
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="login-box">
+                <div class="user-icon">
+                    <i class="far fa-user"></i>
+                </div>
+                <p class = 'username1'><strong>{% block title %}User Login{% endblock %}</strong></p>
+                <br />
+                <form class="login" method="POST">
+                    <div class="form-group">
+                        <input type="text" placeholder="Email" name="email" id="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Password" name="password" id="password" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <p align="center" class="error-message">{{ message }}</p>
+                    </div>
+                    <div class="form-group">
+                        <button class="full-btn">Sign In</button>
+                    </div>
+                    <div class="form-group">
+                    {% block unregistered%} {% endblock %}
+                    <br>
+                    {% block switch %} {% endblock %}
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

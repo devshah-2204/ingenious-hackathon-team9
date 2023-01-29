@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/static/background.jpeg');
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-size: cover;
+    
+  }
+  
+  header {
+    background-color: rgb(47, 204, 188);
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  nav li {
+    float: left;
+  }
+  
+  nav a {
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    border-radius: 5px;
+    background-color: #bce9e2;
+    color: #000;
+  }
+  
+  .hero-image {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .hero-image h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-image button {
+    background-color: rgba(41, 209, 192, 0.911);
+    color: white;
+    padding: 14px 20px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;}
+  
+  .titlefont{
+  font-family: 'Lobster';
+  
+  color: rgb(47, 204, 188)
+  }
+  
+  
+  .navlinks{
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-button {
+    color: white;
+    font-weight: bold;
+    padding-top: 15px;
+  }
+
+  .navbar-custom{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about-us {
+    color: #1C1C1C;
+    padding-left: 50px;
+  }
+
+  .copyright {
+    padding-bottom: 0px;
+    text-align: center;
+  }
+  
+  .submit-button {
+    width:610px;
+    height: 60px;
+    font-size: 20px;
+    background-color:rgb(47, 204, 188);
+    color: white;
+    border-color:rgb(47, 204, 188 );
+    border-radius: 10px;
+}

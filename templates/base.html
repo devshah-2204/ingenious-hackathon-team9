@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{ title }}</title>
+  <link rel="stylesheet" type="text/css" href="/static/home.css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  {% block head %}
+  {% endblock %}
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul class="navbar-custom">
+        <div class="navlinks">
+          <li><a href="/"><img src="/static/img/logo-text-better.png" /></a></li>
+          <li><a href="/" class="nav-button">Home</a></li>
+          <li><a href="/" class="nav-button">About Us</a></li>
+          <li><a href="/" class="nav-button">Contact Us</li>
+        </div>
+
+        {% if not user.is_authenticated %}
+          <li><a class="nav-button" href="/sign-in/">Sign In</a></li>
+        {% else %}
+          <li><a class="nav-button" href="/sign-out/">Sign Out</a></li>
+        {% endif %}
+
+      </ul>
+    </nav>
+  </header>
+
+  {% block content %}
+
+  {% endblock %}
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <footer style="background-color: #2fccbc; padding-bottom: 70px; padding-top: 20px">
+    <div id="ass" class="about-us">
+      <h2>About Us</h2>
+      <p style="color: black">DocAppoint is a healthcare platform that helps you find the right doctor for you and book
+        appointments online. We also offer a range of other healthcare services to make it easy for you to manage your
+        health.</p>
+    </div>
+  </footer>
+
+</body>
+
+
+</html>

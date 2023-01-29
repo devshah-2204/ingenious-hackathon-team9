@@ -1,0 +1,40 @@
+{
+    "doc1@gmail.com": {
+        "email": "doc1@gmail.com",
+        "password": "sha256$VtK8yzhYYv6qurtA$1a1c190010b22097be2501cb118556e717a4ca81e8e616b18afa032e12da62f3",
+        "first_name": "Doc",
+        "last_name": "One",
+        "mobile": "1234567890",
+        "_type": "Orthopedic",
+        "fee": 100,
+        "qualification": "OrthoCollege Topper 2022",
+        "address": "test",
+        "bio": "test"
+    },
+    "doc2@gmail.com": {
+        "email": "doc2@gmail.com",
+        "password": "sha256$Az217F6J3NXdYfJ9$62ad1c7cf9523aac3a5dce64ca31a54081b9e355faa0633cdde8b20cdfae6c75",
+        "first_name": "Doc",
+        "last_name": "Two",
+        "mobile": "1234567890",
+        "_type": "Dermatologist",
+        "fee": 100,
+        "qualification": "test",
+        "address": "test",
+        "bio": "test"
+    },
+
+    "dev1@gmail.com": {
+        "email": "dev1@gmail.com",
+        "password": "sha256$JMDUd8WCEbtp9ibw$41cba347a161d197a47d789ccb26f29beec66925960287eac7fe6487af47cbb6",
+        "first_name": "Dev",
+        "last_name": "Shah",
+        "mobile": "1234567890",
+        "_type": "Orthopedic",
+        "fee": 1000,
+        "qualification": "mbbs",
+        "address": "ahmedabad",
+        "schedule": {},
+        "bio": "best orthopedic doctor"
+    }
+}

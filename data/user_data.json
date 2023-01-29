@@ -1,0 +1,32 @@
+{
+    "dhai@gmail.com": {
+        "password": "sha256$vV3EflOvEXZ8QFbn$4f4b8df81b173cdb5656ec510d0ef67cf8aca762de63f1dd1775a63707919958",
+        "first_name": "Dhai",
+        "last_name": "Patel",
+        "mobile": "1234567899"
+    },
+    "dhai2@gmail.com": {
+        "password": "sha256$VwXOF3j3ivCj5wZS$f6b06f82ade75f5608e800d15838b291f2475c6263c3bcd7eb7c6747d1450eac",
+        "first_name": "Dhairy",
+        "last_name": "Patele",
+        "mobile": "1234567888"
+    },
+    "dev@gmail.com": {
+        "password": "sha256$XPr37KxzxmEs08bv$03565fb55fc67886d10fc4250a4308247f38218982190687763e77b7eafd599b",
+        "first_name": "Dev",
+        "last_name": "Shah",
+        "mobile": "1234567890"
+    },
+    "devhirenshah2211@gmail.com": {
+        "password": "sha256$44giywdy3CMkbUqx$ac950c77d9a1161514558d307a39abaeaec4254ada40f05ddf99a3176b2106a1",
+        "first_name": "Dev",
+        "last_name": "Shah",
+        "mobile": "9825119414"
+    },
+    "dhairya1@gmail.com": {
+        "password": "sha256$uKFYrFcHaOF1ofxw$dd9c6221865ca5cc593bf79282499397f650d16cf8a22fca4f05bd50f8c61303",
+        "first_name": "Dhairya",
+        "last_name": "Doshi",
+        "mobile": "9825119414"
+    }
+}
